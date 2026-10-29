@@ -1,0 +1,1275 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual - Informática</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="inicio">
+
+<header>
+    <h1>Biblioteca Virtual de Informática</h1>
+    <p>Laboratorio de Mantenimiento de Software | Sistemas Operativos en Red | Redes III</p>
+</header>
+
+<nav>
+    <h3>Contenido</h3>
+
+    <a href="#inicio">Inicio</a>
+    <a href="#introduccion">Introducción</a>
+
+    <div class="materia">Mantenimiento de Software</div>
+    <a href="#software-u1">Unidad 1: Ambientes de software</a>
+    <a href="#software-u2">Unidad 2: Diagnóstico</a>
+    <a href="#software-u3">Unidad 3: Mantenimiento</a>
+
+    <div class="materia">Sistemas Operativos en Red</div>
+    <a href="#red-u1">Unidad 1: Instalación de red</a>
+    <a href="#red-u2">Unidad 2: Actualización</a>
+    <a href="#red-u3">Unidad 3: Archivos y seguridad</a>
+    <a href="#red-u4">Unidad 4: Rendimiento</a>
+    <a href="#red-u5">Unidad 5: Servidores</a>
+
+    <div class="materia">Redes III</div>
+    <a href="#redes-u1">Unidad 1: Gestión de red</a>
+    <a href="#redes-u2">Unidad 2: Instalaciones</a>
+    <a href="#redes-u3">Unidad 3: Montaje y control</a>
+
+    <div class="materia">Material de consulta</div>
+    <a href="#glosario">Glosario técnico</a>
+    <a href="#repaso">Preguntas de repaso</a>
+</nav>
+
+<main>
+
+<section id="introduccion">
+    <h1>Introducción</h1>
+
+    <p>
+        Esta biblioteca virtual reúne los principales contenidos de las materias
+        técnicas relacionadas con el mantenimiento de software, la administración
+        de sistemas operativos en red y la instalación, gestión y certificación de
+        redes informáticas.
+    </p>
+
+    <p>
+        Su objetivo es facilitar el estudio, la consulta y el repaso de los temas
+        vistos en clase mediante explicaciones organizadas por unidades.
+    </p>
+
+    <div class="tarjetas">
+        <div class="tarjeta">
+            <h3>Mantenimiento de Software</h3>
+            <p>
+                Diagnóstico de fallas, instalación de programas, actualizaciones,
+                seguridad y optimización de sistemas.
+            </p>
+            <a href="#software-u1">Consultar unidades →</a>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Sistemas Operativos en Red</h3>
+            <p>
+                Instalación de servidores, administración de usuarios,
+                permisos, servicios y recursos de red.
+            </p>
+            <a href="#red-u1">Consultar unidades →</a>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Redes III</h3>
+            <p>
+                Cableado estructurado, fibra óptica, normas técnicas,
+                mediciones, montaje y certificación.
+            </p>
+            <a href="#redes-u1">Consultar unidades →</a>
+        </div>
+    </div>
+</section>
+
+<!-- MANTENIMIENTO DE SOFTWARE -->
+
+<section id="software">
+    <h1>Laboratorio de Mantenimiento de Software</h1>
+
+    <p>
+        El mantenimiento de software comprende las actividades destinadas a
+        conservar los programas informáticos en condiciones correctas de
+        funcionamiento, resolver problemas y mejorar su rendimiento y seguridad.
+    </p>
+
+    <div class="unidad" id="software-u1">
+        <h3>Unidad N.º 1: Evolución de los ambientes de software</h3>
+
+        <h4>1. ¿Qué es un ambiente de software?</h4>
+        <p>
+            Es el conjunto de sistemas operativos, programas, bibliotecas,
+            herramientas y recursos necesarios para ejecutar una aplicación.
+            Su organización fue evolucionando junto con el desarrollo de las
+            computadoras y las redes.
+        </p>
+
+        <h4>2. Operación centralizada</h4>
+        <p>
+            En un ambiente centralizado, el procesamiento principal se realiza
+            en una computadora central. Los usuarios acceden a sus recursos
+            desde terminales u otros dispositivos conectados.
+        </p>
+
+        <ul>
+            <li><strong>Monousuario:</strong> diseñado para que un usuario utilice
+                el sistema a la vez.</li>
+            <li><strong>Multiusuario:</strong> permite que varios usuarios accedan
+                al mismo sistema, incluso simultáneamente.</li>
+        </ul>
+
+        <h4>3. Operación distribuida</h4>
+        <p>
+            El procesamiento y los recursos se distribuyen entre varias
+            computadoras conectadas mediante una red. Cada equipo puede
+            realizar tareas y compartir información con los demás.
+        </p>
+
+        <h4>4. Multiprocesamiento</h4>
+        <p>
+            Consiste en utilizar dos o más procesadores o núcleos para ejecutar
+            tareas de forma concurrente, aumentando la capacidad de procesamiento
+            cuando el sistema y las aplicaciones lo permiten.
+        </p>
+
+        <div class="tabla-contenedor">
+            <table>
+                <tr>
+                    <th>Ambiente</th>
+                    <th>Característica</th>
+                    <th>Ejemplo</th>
+                </tr>
+                <tr>
+                    <td>Centralizado</td>
+                    <td>Recursos concentrados en un equipo central.</td>
+                    <td>Sistema de terminales de una empresa.</td>
+                </tr>
+                <tr>
+                    <td>Distribuido</td>
+                    <td>Varios equipos cooperan mediante una red.</td>
+                    <td>Aplicación con servidor y clientes.</td>
+                </tr>
+                <tr>
+                    <td>Multiprocesamiento</td>
+                    <td>Uso de varios procesadores o núcleos.</td>
+                    <td>Servidor con múltiples núcleos.</td>
+                </tr>
+            </table>
+        </div>
+
+        <h4>5. Instalación de software con poca documentación</h4>
+        <p>
+            Algunos programas poseen documentación escasa o poco clara.
+            Antes de instalarlos es necesario identificar su procedencia,
+            versión, requisitos y compatibilidad con el sistema operativo.
+        </p>
+
+        <ul>
+            <li>Comprobar los requisitos mínimos y recomendados.</li>
+            <li>Verificar la arquitectura compatible: 32 o 64 bits.</li>
+            <li>Revisar dependencias, bibliotecas y controladores necesarios.</li>
+            <li>Analizar la reputación del desarrollador y el origen del instalador.</li>
+            <li>Crear una copia de seguridad o utilizar un entorno de prueba.</li>
+            <li>Evaluar posibles riesgos para los datos y la seguridad.</li>
+        </ul>
+
+        <div class="nota">
+            <strong>Importante:</strong> no se debe instalar software desconocido
+            directamente en un equipo de producción sin evaluar sus riesgos.
+        </div>
+    </div>
+
+    <div class="unidad" id="software-u2">
+        <h3>Unidad N.º 2: Diagnóstico de problemas de software</h3>
+
+        <h4>1. ¿Qué es el diagnóstico?</h4>
+        <p>
+            Es el proceso de identificar la causa de un problema informático
+            mediante observaciones, pruebas y análisis de los resultados.
+            Un diagnóstico correcto evita aplicar soluciones innecesarias.
+        </p>
+
+        <h4>2. Criterios de ensayo y descarte</h4>
+        <p>
+            Consisten en realizar pruebas ordenadas para confirmar o descartar
+            posibles causas de una falla.
+        </p>
+
+        <ol>
+            <li>Identificar el síntoma y cuándo aparece.</li>
+            <li>Recopilar mensajes de error y antecedentes.</li>
+            <li>Revisar cambios recientes en el sistema.</li>
+            <li>Probar una posible causa por vez.</li>
+            <li>Registrar los resultados y descartar hipótesis.</li>
+            <li>Aplicar la solución y comprobar su funcionamiento.</li>
+        </ol>
+
+        <h4>3. Problemas frecuentes</h4>
+        <ul>
+            <li>Aplicaciones que se cierran inesperadamente.</li>
+            <li>Errores de compatibilidad.</li>
+            <li>Falta de memoria o espacio de almacenamiento.</li>
+            <li>Controladores incorrectos o desactualizados.</li>
+            <li>Archivos del sistema dañados.</li>
+            <li>Infecciones por software malicioso.</li>
+            <li>Problemas de conexión con servidores o bases de datos.</li>
+        </ul>
+
+        <h4>4. Estrategias de resolución</h4>
+        <p>
+            La solución puede consistir en actualizar un programa, reparar
+            archivos, modificar una configuración, reinstalar un componente
+            o restaurar una copia de seguridad.
+        </p>
+
+        <h4>5. Economía de la solución</h4>
+        <p>
+            Se deben comparar el tiempo, el costo, los riesgos y los beneficios
+            de cada alternativa. Una solución económica no es necesariamente
+            la de menor precio inicial, sino la que resuelve el problema de
+            manera confiable con un costo total razonable.
+        </p>
+
+        <h4>6. Tendencias en ambientes de software</h4>
+        <ul>
+            <li><strong>Sistemas operativos:</strong> Windows, distribuciones
+                GNU/Linux y otros sistemas especializados.</li>
+            <li><strong>Bases de datos:</strong> MySQL, PostgreSQL, SQL Server
+                y otros gestores.</li>
+            <li><strong>Virtualización:</strong> ejecución de sistemas virtuales
+                sobre un equipo físico.</li>
+            <li><strong>Contenedores:</strong> empaquetado de aplicaciones y
+                dependencias en entornos aislados.</li>
+            <li><strong>Computación en la nube:</strong> utilización de recursos
+                informáticos a través de Internet.</li>
+        </ul>
+    </div>
+
+    <div class="unidad" id="software-u3">
+        <h3>Unidad N.º 3: Mantenimiento, actualización y optimización</h3>
+
+        <h4>1. Tipos de mantenimiento</h4>
+
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <h3>Preventivo</h3>
+                <p>
+                    Busca reducir la probabilidad de fallas mediante
+                    actualizaciones, revisiones, copias de seguridad y
+                    controles periódicos.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Correctivo</h3>
+                <p>
+                    Se realiza después de detectar una falla para reparar
+                    el problema y recuperar el funcionamiento normal.
+                </p>
+            </div>
+        </div>
+
+        <h4>2. Actualización de sistemas y aplicaciones</h4>
+        <p>
+            Actualizar significa instalar una versión más reciente o aplicar
+            mejoras de seguridad y funcionamiento. Antes de hacerlo se deben
+            verificar la compatibilidad, los requisitos y las posibilidades
+            de recuperación.
+        </p>
+
+        <ul>
+            <li>Actualizar el sistema operativo.</li>
+            <li>Instalar controladores compatibles.</li>
+            <li>Actualizar navegadores y aplicaciones.</li>
+            <li>Revisar licencias y dependencias.</li>
+            <li>Reiniciar cuando sea necesario y comprobar los resultados.</li>
+        </ul>
+
+        <h4>3. Instalación, configuración y desinstalación</h4>
+        <p>
+            La instalación incorpora un programa al equipo. La configuración
+            adapta sus opciones a las necesidades del usuario. La desinstalación
+            elimina el programa mediante un procedimiento controlado, evitando
+            borrar archivos compartidos necesarios para otras aplicaciones.
+        </p>
+
+        <h4>4. Seguridad informática</h4>
+        <p>
+            La seguridad informática protege los sistemas y los datos contra
+            accesos no autorizados, alteraciones, pérdidas y programas maliciosos.
+        </p>
+
+        <ul>
+            <li>Virus: código malicioso que puede infectar archivos.</li>
+            <li>Gusanos: programas que pueden propagarse entre sistemas.</li>
+            <li>Troyanos: programas que ocultan funciones maliciosas.</li>
+            <li>Ransomware: software que puede bloquear o cifrar información
+                para exigir un rescate.</li>
+            <li>Spyware: software que recopila información sin autorización
+                adecuada.</li>
+        </ul>
+
+        <h4>5. Copias de seguridad y recuperación</h4>
+        <p>
+            Una copia de seguridad es una copia de los datos que permite
+            recuperarlos ante una pérdida, un error o un incidente de seguridad.
+        </p>
+
+        <ul>
+            <li><strong>Completa:</strong> copia todos los datos seleccionados.</li>
+            <li><strong>Incremental:</strong> guarda los cambios desde la última
+                copia de seguridad realizada.</li>
+            <li><strong>Diferencial:</strong> guarda los cambios desde la última
+                copia completa.</li>
+        </ul>
+
+        <p>
+            La recuperación consiste en restaurar los archivos o el sistema
+            utilizando las copias disponibles. Es fundamental probar que las
+            copias se puedan restaurar correctamente.
+        </p>
+
+        <h4>6. Optimización del rendimiento</h4>
+        <ul>
+            <li>Desinstalar programas que ya no se necesitan.</li>
+            <li>Eliminar archivos temporales innecesarios.</li>
+            <li>Controlar las aplicaciones que se inician con el sistema.</li>
+            <li>Revisar el consumo de CPU, memoria RAM y almacenamiento.</li>
+            <li>Comprobar el estado del disco y los registros de errores.</li>
+            <li>Evitar desactivar servicios esenciales sin conocer su función.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- SISTEMAS OPERATIVOS EN RED -->
+
+<section id="sistemas-red">
+    <h1>Sistemas Operativos en Red</h1>
+
+    <p>
+        Un sistema operativo en red permite administrar usuarios, archivos,
+        dispositivos, permisos y servicios compartidos entre computadoras.
+        Se utiliza en empresas, instituciones educativas y centros de datos.
+    </p>
+
+    <div class="unidad" id="red-u1">
+        <h3>Unidad N.º 1: Instalación de la red</h3>
+
+        <h4>1. Preparación de la instalación</h4>
+        <p>
+            Antes de instalar un servidor es necesario determinar su función,
+            los recursos necesarios, la topología de red, el direccionamiento
+            IP, los requisitos de seguridad y las necesidades de almacenamiento.
+        </p>
+
+        <h4>2. Instalación de nuevos servidores</h4>
+        <p>
+            Un servidor es un equipo físico o virtual que proporciona servicios
+            a otros dispositivos. Puede ofrecer archivos, autenticación, páginas
+            web, bases de datos y asignación de direcciones IP.
+        </p>
+
+        <h4>3. Carga del sistema operativo de red</h4>
+        <ol>
+            <li>Verificar el hardware y los requisitos del sistema operativo.</li>
+            <li>Preparar el medio de instalación.</li>
+            <li>Configurar el arranque del equipo.</li>
+            <li>Instalar el sistema operativo.</li>
+            <li>Configurar el nombre del servidor.</li>
+            <li>Asignar la configuración de red correspondiente.</li>
+            <li>Instalar controladores y actualizaciones.</li>
+            <li>Comprobar la conectividad y el funcionamiento.</li>
+        </ol>
+
+        <h4>4. Discos y particiones</h4>
+        <p>
+            Una partición es una división lógica de un dispositivo de
+            almacenamiento. Permite organizar el espacio para el sistema
+            operativo, los datos y otras funciones.
+        </p>
+
+        <h4>5. Duplicación de discos y canales</h4>
+        <p>
+            La duplicación de discos puede mantener copias de los datos
+            para aumentar la disponibilidad. RAID 1, por ejemplo, utiliza
+            discos espejados. La redundancia de canales o enlaces busca
+            mantener la conectividad si falla una ruta, siempre que la
+            infraestructura esté diseñada para ello.
+        </p>
+
+        <h4>6. Controladores de red</h4>
+        <p>
+            Son programas que permiten al sistema operativo comunicarse con
+            el hardware de red, como las placas Ethernet o los adaptadores Wi-Fi.
+        </p>
+    </div>
+
+    <div class="unidad" id="red-u2">
+        <h3>Unidad N.º 2: Actualización e instalación de estaciones</h3>
+
+        <h4>1. Proceso de actualización</h4>
+        <p>
+            Antes de actualizar un servidor se deben revisar las versiones
+            instaladas, la compatibilidad, el espacio disponible, las dependencias
+            y las opciones de recuperación.
+        </p>
+
+        <ul>
+            <li><strong>Actualización local:</strong> se realiza directamente
+                sobre el servidor.</li>
+            <li><strong>Actualización remota:</strong> se administra desde otro
+                equipo a través de la red.</li>
+        </ul>
+
+        <p>
+            Las actualizaciones remotas requieren una conexión confiable,
+            permisos adecuados y medidas para evitar perder el acceso al servidor.
+        </p>
+
+        <h4>2. Opciones de instalación</h4>
+        <p>
+            Una instalación nueva configura el sistema desde cero. Una actualización
+            conserva, cuando es compatible, parte de la configuración y los datos
+            existentes. La elección depende de los requisitos y de la situación
+            del sistema.
+        </p>
+
+        <h4>3. Instalación de estaciones de trabajo</h4>
+        <p>
+            Las estaciones de trabajo son los equipos utilizados por los usuarios
+            para acceder a los recursos de la red. Deben configurarse con un
+            sistema operativo compatible, controladores, aplicaciones y las
+            políticas de seguridad correspondientes.
+        </p>
+
+        <h4>4. Estaciones sin discos</h4>
+        <p>
+            Son equipos que dependen de un servidor para iniciar el sistema
+            o acceder a su entorno de trabajo. Pueden utilizar arranque por red
+            mediante tecnologías como PXE, junto con los servicios necesarios.
+        </p>
+
+        <h4>5. Interconexión de redes</h4>
+        <p>
+            La interconexión permite comunicar redes diferentes mediante
+            dispositivos como routers y switches de capa 3. La configuración
+            debe contemplar direcciones IP, rutas y reglas de seguridad.
+        </p>
+
+        <h4>6. Configuración TCP/IP</h4>
+        <p>
+            TCP/IP es el conjunto de protocolos utilizado para comunicar
+            dispositivos en redes IP.
+        </p>
+
+        <ul>
+            <li><strong>Dirección IP:</strong> identifica una interfaz en una red.</li>
+            <li><strong>Máscara o prefijo:</strong> determina la porción de red
+                de una dirección IP.</li>
+            <li><strong>Puerta de enlace:</strong> permite enviar tráfico a otras
+                redes.</li>
+            <li><strong>DNS:</strong> traduce nombres de dominio en información
+                de direccionamiento.</li>
+            <li><strong>DHCP:</strong> asigna automáticamente la configuración
+                IP a los clientes.</li>
+        </ul>
+    </div>
+
+    <div class="unidad" id="red-u3">
+        <h3>Unidad N.º 3: Sistema de archivos y seguridad</h3>
+
+        <h4>1. Sistema de archivos</h4>
+        <p>
+            Es el método que utiliza un sistema operativo para organizar,
+            almacenar y recuperar archivos y directorios.
+        </p>
+
+        <div class="tabla-contenedor">
+            <table>
+                <tr>
+                    <th>Sistema</th>
+                    <th>Característica general</th>
+                </tr>
+                <tr>
+                    <td>NTFS</td>
+                    <td>Común en Windows; admite permisos y otras funciones
+                        de administración.</td>
+                </tr>
+                <tr>
+                    <td>ext4</td>
+                    <td>Muy utilizado en sistemas GNU/Linux.</td>
+                </tr>
+                <tr>
+                    <td>FAT32</td>
+                    <td>Amplia compatibilidad, con un límite de 4 GB por archivo.</td>
+                </tr>
+                <tr>
+                    <td>exFAT</td>
+                    <td>Diseñado para almacenamiento extraíble y archivos grandes.</td>
+                </tr>
+            </table>
+        </div>
+
+        <h4>2. Organización de directorios</h4>
+        <p>
+            Los directorios permiten agrupar archivos y establecer una estructura
+            ordenada. En una red se pueden crear carpetas compartidas por
+            departamento, proyecto o grupo de usuarios.
+        </p>
+
+        <h4>3. Secuencias de conexión</h4>
+        <p>
+            Durante el inicio de sesión, el sistema identifica al usuario,
+            verifica sus credenciales, aplica las políticas correspondientes
+            y habilita los recursos que tiene autorizados.
+        </p>
+
+        <h4>4. Jerarquía de usuarios y privilegios</h4>
+        <p>
+            Los privilegios determinan las operaciones que puede realizar cada
+            usuario. La administración debe asignar solamente los permisos
+            necesarios para cumplir las tareas de cada persona.
+        </p>
+
+        <ul>
+            <li><strong>Administrador:</strong> administra el sistema y sus
+                configuraciones autorizadas.</li>
+            <li><strong>Usuario estándar:</strong> utiliza aplicaciones y recursos
+                con permisos limitados.</li>
+            <li><strong>Grupo:</strong> reúne usuarios para facilitar la
+                asignación de permisos.</li>
+        </ul>
+
+        <h4>5. Derechos de acceso</h4>
+        <p>
+            Los derechos pueden permitir leer, escribir, modificar, ejecutar
+            o eliminar archivos. En una carpeta compartida es importante
+            coordinar los permisos de red con los permisos del sistema de archivos.
+        </p>
+
+        <div class="nota">
+            <strong>Principio de mínimo privilegio:</strong> cada usuario debe
+            disponer solamente de los permisos que necesita para trabajar.
+        </div>
+
+        <h4>6. Tareas de administración</h4>
+        <ul>
+            <li>Crear y desactivar cuentas de usuarios.</li>
+            <li>Revisar permisos y políticas de seguridad.</li>
+            <li>Supervisar registros de acceso.</li>
+            <li>Controlar copias de seguridad.</li>
+            <li>Documentar cambios y configuraciones.</li>
+        </ul>
+    </div>
+
+    <div class="unidad" id="red-u4">
+        <h3>Unidad N.º 4: Rendimiento y recursos del servidor</h3>
+
+        <h4>1. Utilización del procesador</h4>
+        <p>
+            La utilización de CPU indica cuánto tiempo de procesamiento está
+            ocupado. Un uso elevado y sostenido puede indicar una carga intensa,
+            un proceso defectuoso o una demanda mayor que la capacidad disponible.
+        </p>
+
+        <h4>2. Estadísticas de memoria</h4>
+        <p>
+            Permiten observar la RAM utilizada, la disponible, la memoria en
+            caché y el uso de memoria virtual. La falta de memoria puede provocar
+            lentitud o errores en las aplicaciones.
+        </p>
+
+        <h4>3. Planificación de procesos</h4>
+        <p>
+            El sistema operativo distribuye el tiempo de CPU entre los procesos.
+            La prioridad, la cantidad de tareas y las políticas de planificación
+            influyen en el rendimiento general.
+        </p>
+
+        <h4>4. Estadísticas de recursos</h4>
+        <ul>
+            <li>Uso del procesador.</li>
+            <li>Consumo de memoria RAM.</li>
+            <li>Espacio libre y actividad de los discos.</li>
+            <li>Tráfico de red y errores de conexión.</li>
+            <li>Procesos y servicios en ejecución.</li>
+        </ul>
+
+        <h4>5. Herramientas de supervisión</h4>
+        <p>
+            Las herramientas dependen del sistema operativo. En Windows pueden
+            utilizarse el Administrador de tareas, el Monitor de recursos y
+            el Visor de eventos. En Linux existen herramientas como top, free,
+            df y herramientas de registro del sistema.
+        </p>
+
+        <h4>6. Mejoras de rendimiento</h4>
+        <p>
+            Para optimizar un servidor se deben identificar los cuellos de botella,
+            reducir procesos innecesarios, revisar el almacenamiento, comprobar
+            los servicios y ajustar los recursos según la carga real.
+        </p>
+    </div>
+
+    <div class="unidad" id="red-u5">
+        <h3>Unidad N.º 5: Volúmenes, reparación y servicios</h3>
+
+        <h4>1. Montaje y desmontaje de volúmenes</h4>
+        <p>
+            Un volumen es una unidad lógica de almacenamiento. Montarlo significa
+            hacerlo accesible al sistema operativo. Desmontarlo de forma segura
+            permite cerrar el acceso antes de retirarlo o realizar determinadas
+            tareas de mantenimiento.
+        </p>
+
+        <h4>2. Reparación de servidores</h4>
+        <p>
+            El procedimiento incluye identificar la falla, evaluar su impacto,
+            proteger los datos, diagnosticar el origen, aplicar una solución y
+            verificar el servicio. Las reparaciones deben documentarse.
+        </p>
+
+        <h4>3. Principales servicios de red</h4>
+
+        <div class="tabla-contenedor">
+            <table>
+                <tr>
+                    <th>Servicio</th>
+                    <th>Función</th>
+                    <th>Puerto habitual</th>
+                </tr>
+                <tr>
+                    <td>DNS</td>
+                    <td>Resuelve nombres de dominio.</td>
+                    <td>53 TCP/UDP</td>
+                </tr>
+                <tr>
+                    <td>DHCP</td>
+                    <td>Asigna automáticamente parámetros IP.</td>
+                    <td>67/68 UDP</td>
+                </tr>
+                <tr>
+                    <td>HTTP</td>
+                    <td>Transfiere contenido web sin cifrado.</td>
+                    <td>80 TCP</td>
+                </tr>
+                <tr>
+                    <td>HTTPS</td>
+                    <td>Comunicación web protegida mediante TLS.</td>
+                    <td>443 TCP</td>
+                </tr>
+                <tr>
+                    <td>FTP</td>
+                    <td>Transfiere archivos; requiere protección adicional
+                        cuando se utiliza sin cifrado.</td>
+                    <td>21 TCP para control</td>
+                </tr>
+                <tr>
+                    <td>SMTP</td>
+                    <td>Envía o retransmite correo electrónico.</td>
+                    <td>25, 587 o 465 TCP</td>
+                </tr>
+                <tr>
+                    <td>IMAP</td>
+                    <td>Permite acceder y sincronizar mensajes del servidor.</td>
+                    <td>143 o 993 TCP</td>
+                </tr>
+            </table>
+        </div>
+
+        <h4>4. Implementación de servicios</h4>
+        <ol>
+            <li>Definir los objetivos y requisitos.</li>
+            <li>Instalar el software del servicio.</li>
+            <li>Configurar parámetros, usuarios y permisos.</li>
+            <li>Aplicar medidas de seguridad.</li>
+            <li>Realizar pruebas de funcionamiento.</li>
+            <li>Ejecutar una prueba piloto.</li>
+            <li>Corregir errores y documentar la configuración final.</li>
+        </ol>
+
+        <h4>5. Cableado y verificación</h4>
+        <p>
+            El cableado de una red debe instalarse de acuerdo con el diseño,
+            las normas aplicables y las condiciones del lugar. Se pueden usar
+            probadores de continuidad, verificadores de mapa de cableado y
+            certificadores para comprobar diferentes parámetros del enlace.
+        </p>
+    </div>
+</section>
+
+<!-- REDES III -->
+
+<section id="redes-iii">
+    <h1>Redes III</h1>
+
+    <p>
+        Redes III estudia el diseño, montaje, mantenimiento y administración
+        de infraestructuras de comunicación. Incluye cableado estructurado,
+        fibra óptica, puesta a tierra, mediciones y certificación.
+    </p>
+
+    <div class="unidad" id="redes-u1">
+        <h3>Unidad N.º 1: Mantenimiento y gestión de red</h3>
+
+        <h4>1. Mantenimiento de redes informáticas</h4>
+        <p>
+            Es el conjunto de tareas destinadas a conservar la red operativa,
+            segura y confiable.
+        </p>
+
+        <ul>
+            <li><strong>Preventivo:</strong> inspecciones, limpieza, mediciones
+                y revisiones programadas.</li>
+            <li><strong>Correctivo:</strong> reparación de fallas ya detectadas.</li>
+            <li><strong>Predictivo:</strong> utiliza mediciones y tendencias para
+                anticipar problemas.</li>
+        </ul>
+
+        <p>
+            La documentación debe registrar los equipos, las conexiones,
+            los resultados de pruebas, las modificaciones y las incidencias.
+        </p>
+
+        <h4>2. Cableado estructurado</h4>
+        <p>
+            Es un sistema organizado de cables, conectores, paneles y
+            canalizaciones que permite transportar datos dentro de un edificio
+            de forma ordenada y normalizada.
+        </p>
+
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <h3>Cableado horizontal</h3>
+                <p>
+                    Conecta el distribuidor de planta con las tomas de
+                    telecomunicaciones de los espacios de trabajo.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Cableado vertical o backbone</h3>
+                <p>
+                    Interconecta plantas, salas de equipos y distribuidores
+                    principales del edificio.
+                </p>
+            </div>
+        </div>
+
+        <h4>3. Normas y estándares</h4>
+        <div class="tabla-contenedor">
+            <table>
+                <tr>
+                    <th>Norma</th>
+                    <th>Área principal</th>
+                </tr>
+                <tr>
+                    <td>ANSI/TIA-568</td>
+                    <td>Cableado estructurado y componentes de telecomunicaciones.</td>
+                </tr>
+                <tr>
+                    <td>ANSI/TIA-569</td>
+                    <td>Canalizaciones y espacios para telecomunicaciones.</td>
+                </tr>
+                <tr>
+                    <td>ANSI/TIA-606</td>
+                    <td>Administración, identificación y rotulación.</td>
+                </tr>
+                <tr>
+                    <td>ANSI/TIA-607</td>
+                    <td>Unión equipotencial y puesta a tierra de telecomunicaciones.</td>
+                </tr>
+                <tr>
+                    <td>ANSI/TIA-942</td>
+                    <td>Infraestructura de centros de datos.</td>
+                </tr>
+            </table>
+        </div>
+
+        <p>
+            Las revisiones de estos estándares pueden cambiar con el tiempo.
+            Para un proyecto real se debe consultar la edición vigente y la
+            normativa local aplicable.
+        </p>
+
+        <h4>4. Tipos de cable de cobre</h4>
+        <ul>
+            <li><strong>UTP:</strong> par trenzado sin blindaje individual
+                o general.</li>
+            <li><strong>STP:</strong> denominación utilizada para cables
+                de par trenzado con blindaje.</li>
+            <li><strong>FTP:</strong> cable con pantalla general alrededor
+                de los pares.</li>
+            <li><strong>PiMF:</strong> pares individualmente rodeados por
+                una lámina metálica.</li>
+        </ul>
+
+        <p>
+            Los términos de blindaje pueden variar entre fabricantes y
+            especificaciones. Es importante comprobar la construcción real
+            del cable y la forma correcta de instalarlo.
+        </p>
+
+        <h4>5. Categorías de cable UTP</h4>
+        <div class="tabla-contenedor">
+            <table>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Características generales</th>
+                </tr>
+                <tr>
+                    <td>Cat 5e</td>
+                    <td>Admite Gigabit Ethernet hasta 100 metros en un enlace
+                        de canal correctamente instalado y certificado.</td>
+                </tr>
+                <tr>
+                    <td>Cat 6</td>
+                    <td>Mejora el desempeño frente a Cat 5e. Puede admitir
+                        10 Gb/s en distancias reducidas, según las condiciones.</td>
+                </tr>
+                <tr>
+                    <td>Cat 6A</td>
+                    <td>Diseñada para soportar 10 Gb/s hasta 100 metros
+                        en un canal conforme a especificaciones.</td>
+                </tr>
+            </table>
+        </div>
+
+        <h4>6. Conectores y terminaciones</h4>
+        <ul>
+            <li><strong>Plug:</strong> conector macho colocado habitualmente
+                en el extremo de un latiguillo.</li>
+            <li><strong>Jack:</strong> conector hembra utilizado en tomas
+                de telecomunicaciones.</li>
+            <li><strong>Patchera o patch panel:</strong> panel donde terminan
+                y se organizan los cables de una instalación.</li>
+        </ul>
+
+        <h4>7. Secuencia T568B</h4>
+        <p>
+            El estándar T568B establece el orden de los conductores en la
+            terminación de un cable de par trenzado.
+        </p>
+
+        <ol>
+            <li>Blanco/naranja</li>
+            <li>Naranja</li>
+            <li>Blanco/verde</li>
+            <li>Azul</li>
+            <li>Blanco/azul</li>
+            <li>Verde</li>
+            <li>Blanco/marrón</li>
+            <li>Marrón</li>
+        </ol>
+
+        <div class="nota">
+            <strong>Recordá:</strong> un cable directo utiliza el mismo
+            esquema en ambos extremos. Para enlaces modernos, los equipos
+            suelen admitir la detección automática MDI-X.
+        </div>
+
+        <h4>8. Fibra óptica</h4>
+        <p>
+            La fibra óptica transmite información mediante pulsos de luz.
+            Se utiliza en enlaces de alta capacidad y en distancias donde
+            el cobre presenta mayores limitaciones.
+        </p>
+
+        <ul>
+            <li><strong>Monomodo:</strong> núcleo pequeño, utilizado habitualmente
+                en enlaces de larga distancia.</li>
+            <li><strong>Multimodo:</strong> núcleo mayor, común en ciertos
+                enlaces de edificios y centros de datos.</li>
+            <li><strong>Core:</strong> núcleo por el que se propaga la luz.</li>
+            <li><strong>Cladding:</strong> revestimiento óptico que ayuda
+                a mantener la luz dentro del núcleo.</li>
+        </ul>
+
+        <h4>9. Reflexión, refracción e índice refractivo</h4>
+        <p>
+            La reflexión es el cambio de dirección de la luz al rebotar
+            en una superficie. La refracción es el cambio de dirección
+            al pasar entre medios con distintas propiedades ópticas.
+            El índice de refracción indica cómo se propaga la luz en un medio.
+        </p>
+
+        <h4>10. Apertura numérica</h4>
+        <p>
+            En fibra óptica multimodo, la apertura numérica expresa la capacidad
+            de la fibra para aceptar luz dentro de determinados ángulos.
+            Depende de los índices de refracción del núcleo y del revestimiento.
+        </p>
+
+        <h4>11. Canalizaciones y espacios</h4>
+        <p>
+            Las canalizaciones, bandejas y ductos protegen y organizan el
+            cableado. El diseño debe considerar cantidad y diámetro de cables,
+            capacidad de crecimiento, radios de curvatura, accesibilidad
+            y separación de los conductores eléctricos.
+        </p>
+
+        <h4>12. Administración y rotulación</h4>
+        <p>
+            La identificación de cables, tomas, patcheras y racks facilita
+            el mantenimiento y reduce errores. Las etiquetas deben ser
+            legibles, coherentes y reflejar la documentación de la instalación.
+        </p>
+
+        <h4>13. Puesta a tierra</h4>
+        <p>
+            La puesta a tierra y la unión equipotencial contribuyen a la
+            seguridad de las personas y los equipos, y ayudan a gestionar
+            determinadas corrientes de falla y perturbaciones eléctricas.
+            Deben diseñarse e instalarse según la normativa correspondiente.
+        </p>
+    </div>
+
+    <div class="unidad" id="redes-u2">
+        <h3>Unidad N.º 2: Características e instalaciones</h3>
+
+        <h4>1. Resistencia de tierra</h4>
+        <p>
+            Es la oposición que presenta el sistema de puesta a tierra al
+            paso de corriente hacia el terreno. Su valor depende, entre otros
+            factores, de las características del suelo, los electrodos y
+            la geometría de la instalación.
+        </p>
+
+        <h4>2. Jabalina vertical</h4>
+        <p>
+            Es un electrodo que se instala verticalmente en el terreno para
+            formar parte del sistema de puesta a tierra. La cantidad, longitud
+            y disposición se determinan según el diseño y las mediciones.
+        </p>
+
+        <h4>3. Medición de la puesta a tierra</h4>
+        <p>
+            La resistencia se verifica con instrumentos y métodos apropiados,
+            como los métodos de caída de potencial o equipos específicos
+            compatibles con el sistema instalado.
+        </p>
+
+        <div class="nota">
+            Los trabajos eléctricos deben ser realizados por personal
+            capacitado y de acuerdo con las normas de seguridad aplicables.
+            No se debe asumir que una instalación es segura sin verificarla.
+        </div>
+
+        <h4>4. Data Center</h4>
+        <p>
+            Un centro de datos alberga servidores, almacenamiento, redes
+            y sistemas auxiliares que permiten procesar y conservar información.
+            Su diseño contempla disponibilidad, seguridad, refrigeración,
+            energía, cableado y protección contra incidentes.
+        </p>
+
+        <h4>5. Cuarto de telecomunicaciones</h4>
+        <p>
+            Es un espacio destinado a alojar equipos de comunicaciones,
+            distribuidores de cableado, patcheras y otros componentes.
+            Debe tener espacio de trabajo adecuado, orden, ventilación
+            y acceso controlado.
+        </p>
+
+        <h4>6. Decibel (dB)</h4>
+        <p>
+            El decibel es una unidad logarítmica que expresa una relación
+            entre magnitudes. En telecomunicaciones se utiliza para representar
+            ganancias, pérdidas y niveles de señal.
+        </p>
+
+        <ul>
+            <li><strong>Ganancia:</strong> aumento relativo de una señal.</li>
+            <li><strong>Atenuación:</strong> disminución de la señal durante
+                su transmisión.</li>
+        </ul>
+
+        <p>Para una relación de potencias:</p>
+
+        <p><strong>dB = 10 × log₁₀ (P₂ / P₁)</strong></p>
+
+        <p>
+            Un resultado positivo representa una ganancia relativa; uno
+            negativo representa una pérdida, según la relación elegida.
+        </p>
+
+        <h4>7. Mediciones del cableado</h4>
+        <ul>
+            <li><strong>Mapa de cableado:</strong> verifica la correspondencia
+                de los conductores entre extremos.</li>
+            <li><strong>Longitud:</strong> mide o estima la longitud del enlace.</li>
+            <li><strong>Tiempo de propagación:</strong> tiempo que tarda la señal
+                en recorrer un tramo.</li>
+            <li><strong>Diferencia de retardo:</strong> diferencia de propagación
+                entre pares.</li>
+            <li><strong>Atenuación:</strong> pérdida de potencia de la señal.</li>
+            <li><strong>Pérdida de retorno:</strong> energía reflejada debido
+                a discontinuidades de impedancia.</li>
+        </ul>
+
+        <h4>8. Diafonía y parámetros de desempeño</h4>
+        <p>
+            La diafonía es la interferencia que una señal genera sobre
+            otro par de conductores.
+        </p>
+
+        <ul>
+            <li><strong>NEXT:</strong> diafonía medida en el extremo cercano.</li>
+            <li><strong>FEXT:</strong> diafonía medida en el extremo lejano.</li>
+            <li><strong>ACR:</strong> relación entre la atenuación y la diafonía
+                NEXT, expresada como diferencia de niveles en dB.</li>
+            <li><strong>ELFEXT:</strong> FEXT normalizada considerando
+                la atenuación del enlace.</li>
+        </ul>
+
+        <p>
+            Estos parámetros permiten evaluar la calidad del enlace y comprobar
+            si cumple los requisitos de la categoría de cableado instalada.
+            Las denominaciones y métodos exactos dependen del estándar
+            de certificación aplicable.
+        </p>
+    </div>
+
+    <div class="unidad" id="redes-u3">
+        <h3>Unidad N.º 3: Montaje y control</h3>
+
+        <h4>1. Montaje de equipos</h4>
+        <p>
+            El montaje puede realizarse en un laboratorio o directamente
+            en el lugar de instalación. Debe seguir un diseño previo y
+            respetar las condiciones de seguridad, orden y compatibilidad.
+        </p>
+
+        <h4>2. Pruebas parciales y totales</h4>
+        <ul>
+            <li><strong>Pruebas parciales:</strong> verifican componentes
+                o tramos individuales.</li>
+            <li><strong>Pruebas totales:</strong> comprueban el funcionamiento
+                del sistema completo.</li>
+        </ul>
+
+        <h4>3. Medición y certificación</h4>
+        <p>
+            Un certificador de cableado realiza mediciones para comprobar
+            parámetros eléctricos y determinar si un enlace cumple los
+            requisitos de una categoría o clase determinada. No es lo mismo
+            que una prueba básica de continuidad.
+        </p>
+
+        <h4>4. Carga inicial de software</h4>
+        <p>
+            Después de montar los equipos, se instala y configura el software
+            necesario. Deben comprobarse las versiones, licencias, recursos
+            disponibles, seguridad y rendimiento.
+        </p>
+
+        <h4>5. Administración de redes</h4>
+        <p>
+            La administración comprende el monitoreo, la configuración,
+            la gestión de usuarios, el control de permisos, las actualizaciones,
+            el mantenimiento y la documentación de los servicios.
+        </p>
+
+        <h4>6. Servidores de correo, Web, FTP y bases de datos</h4>
+        <p>
+            Cada servidor cumple una función específica y requiere una
+            configuración acorde con el servicio, las necesidades de los
+            usuarios y las políticas de seguridad.
+        </p>
+
+        <ul>
+            <li><strong>Correo:</strong> gestiona el envío y la recepción
+                de mensajes.</li>
+            <li><strong>Web:</strong> publica sitios y aplicaciones.</li>
+            <li><strong>FTP:</strong> permite transferir archivos.</li>
+            <li><strong>Base de datos:</strong> almacena, organiza y permite
+                consultar información.</li>
+        </ul>
+
+        <h4>7. Integración de sistemas</h4>
+        <p>
+            Consiste en hacer que distintos sistemas, aplicaciones y servicios
+            intercambien información de forma coordinada. Requiere compatibilidad,
+            protocolos adecuados, control de acceso y pruebas.
+        </p>
+
+        <h4>8. Virtualización</h4>
+        <p>
+            La virtualización permite ejecutar máquinas virtuales sobre un
+            equipo físico mediante un hipervisor. Cada máquina virtual puede
+            contar con su propio sistema operativo y recursos asignados.
+        </p>
+
+        <h4>9. Análisis de costos y presupuestos</h4>
+        <p>
+            Un presupuesto de infraestructura debe considerar materiales,
+            equipos, mano de obra, instalación, configuración, certificación,
+            mantenimiento y posibles costos de actualización.
+        </p>
+
+        <h4>10. Garantías y documentación</h4>
+        <p>
+            La documentación final debe registrar el diseño, los equipos,
+            las rutas de cableado, las etiquetas, las configuraciones,
+            los resultados de las pruebas y las condiciones de garantía.
+        </p>
+
+        <h4>11. Prueba piloto y ajustes finales</h4>
+        <p>
+            La prueba piloto consiste en implementar el sistema en una parte
+            controlada del entorno antes de extenderlo. Permite identificar
+            fallas, corregir configuraciones y comprobar que los requisitos
+            se cumplan antes de la implementación definitiva.
+        </p>
+    </div>
+</section>
+
+<!-- GLOSARIO -->
+
+<section id="glosario">
+    <h1>Glosario técnico</h1>
+
+    <p>
+        Conceptos fundamentales para comprender las tres materias.
+    </p>
+
+    <div class="tabla-contenedor">
+        <table>
+            <tr>
+                <th>Término</th>
+                <th>Definición</th>
+            </tr>
+            <tr>
+                <td>Backup</td>
+                <td>Copia de seguridad utilizada para recuperar información.</td>
+            </tr>
+            <tr>
+                <td>CPU</td>
+                <td>Unidad central de procesamiento que ejecuta instrucciones.</td>
+            </tr>
+            <tr>
+                <td>DNS</td>
+                <td>Servicio que permite resolver nombres de dominio.</td>
+            </tr>
+            <tr>
+                <td>DHCP</td>
+                <td>Protocolo que asigna automáticamente parámetros de red.</td>
+            </tr>
+            <tr>
+                <td>Dirección IP</td>
+                <td>Identificador lógico de una interfaz dentro de una red IP.</td>
+            </tr>
+            <tr>
+                <td>Firewall</td>
+                <td>Sistema que filtra el tráfico según reglas de seguridad.</td>
+            </tr>
+            <tr>
+                <td>Firmware</td>
+                <td>Software de bajo nivel integrado en un dispositivo.</td>
+            </tr>
+            <tr>
+                <td>Latencia</td>
+                <td>Tiempo que tarda la información en llegar a su destino.</td>
+            </tr>
+            <tr>
+                <td>Patch panel</td>
+                <td>Panel que organiza las terminaciones del cableado.</td>
+            </tr>
+            <tr>
+                <td>RAM</td>
+                <td>Memoria de acceso aleatorio utilizada por programas y procesos.</td>
+            </tr>
+            <tr>
+                <td>RAID</td>
+                <td>Técnica de organización de discos que puede mejorar
+                    disponibilidad o rendimiento según su nivel.</td>
+            </tr>
+            <tr>
+                <td>TCP/IP</td>
+                <td>Conjunto de protocolos que permite la comunicación en redes IP.</td>
+            </tr>
+            <tr>
+                <td>UTP</td>
+                <td>Cable de pares trenzados sin blindaje.</td>
+            </tr>
+            <tr>
+                <td>Virtualización</td>
+                <td>Tecnología para crear entornos informáticos virtuales.</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<!-- REPASO -->
+
+<section id="repaso">
+    <h1>Preguntas de repaso</h1>
+
+    <p>
+        Utilizá estas preguntas para comprobar tus conocimientos después
+        de estudiar cada unidad.
+    </p>
+
+    <div class="unidad">
+        <h3>Mantenimiento de Software</h3>
+        <ol>
+            <li>¿Cuál es la diferencia entre operación centralizada y distribuida?</li>
+            <li>¿Qué diferencias existen entre mantenimiento preventivo y correctivo?</li>
+            <li>¿Qué pasos se deben seguir para diagnosticar una falla?</li>
+            <li>¿Qué es una copia de seguridad y para qué sirve?</li>
+            <li>¿Qué medidas permiten mejorar el rendimiento de un sistema?</li>
+        </ol>
+    </div>
+
+    <div class="unidad">
+        <h3>Sistemas Operativos en Red</h3>
+        <ol>
+            <li>¿Qué función cumple un servidor?</li>
+            <li>¿Qué son una partición y un volumen?</li>
+            <li>¿Qué función cumplen DNS y DHCP?</li>
+            <li>¿Qué diferencia existe entre un administrador y un usuario estándar?</li>
+            <li>¿Qué recursos se deben supervisar para evaluar el rendimiento?</li>
+        </ol>
+    </div>
+
+    <div class="unidad">
+        <h3>Redes III</h3>
+        <ol>
+            <li>¿Qué diferencias existen entre cableado horizontal y backbone vertical?</li>
+            <li>¿Cuál es el orden de colores del estándar T568B?</li>
+            <li>¿Qué diferencias generales existen entre fibra monomodo y multimodo?</li>
+            <li>¿Qué función cumplen las normas de canalizaciones y rotulación?</li>
+            <li>¿Qué diferencia existe entre un probador de continuidad y un certificador?</li>
+            <li>¿Qué significan NEXT, FEXT y atenuación?</li>
+            <li>¿Por qué son importantes la puesta a tierra y la unión equipotencial?</li>
+        </ol>
+    </div>
+
+    <div class="nota">
+        <strong>Consejo de estudio:</strong> intentá responder las preguntas
+        sin consultar los apuntes y después volvé a las unidades para verificar
+        tus respuestas.
+    </div>
+</section>
+
+<a class="volver" href="#inicio">↑ Volver al inicio</a>
+
+</main>
+
+<footer>
+    <strong>Biblioteca Virtual de Informática</strong>
+    <p>Material educativo de consulta y estudio</p>
+    <p>Laboratorio de Mantenimiento de Software · Sistemas Operativos en Red · Redes III</p>
+</footer>
+
+</body>
+</html>
